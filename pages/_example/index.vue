@@ -1,10 +1,10 @@
 <template>
-  <div id="pano" style="width: 100%; height: 600px;"></div>
+  <div id="pano" style="width: 100%; height: 100%;"></div>
 </template>
 
 <script>
 
-
+import xml from "~/assets/folder-xml.js"
 export default {
   layout: 'examples',
   head: {
@@ -12,9 +12,14 @@ export default {
       { src: 'krpano.js'  }
     ],
   },
+  computed:{
+    xml() {
+      return `examples/${this.$route.params.example}/${xml[this.$route.params.example]}`
+    }
+  },
   mounted() {
       embedpano({
-          xml: "krpano.xml",
+        xml: this.xml,
         target: "pano",
         html5: "only",
         initvars: {

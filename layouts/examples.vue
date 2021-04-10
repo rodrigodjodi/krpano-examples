@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <Nuxt/>
+    <Nuxt  />
   </div>
 </template>
 
 <style>
 html {
-        height: 100%;
-      }
+  height: 100%;
+}
 body {
 height: 100%;
 overflow: hidden;
@@ -18,7 +18,12 @@ font-size: 16px;
 color: #ffffff;
 background-color: #000000;
 }
-
+div#__nuxt,
+#__layout,
+#__layout > div,
+#app {
+  height: 100%;
+}
 
 .container {
     height: 100%;
