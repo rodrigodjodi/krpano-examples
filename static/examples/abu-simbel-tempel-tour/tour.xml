@@ -374,7 +374,7 @@
 		html="i" css="font-size:60px;text-align:center;" vcenter="true"
 		width="70" height="70" scale="0.2"
 		bgroundedge="36" bgborder="2 0x000000 1" bgshadow="0 0 5 0xFFFFFF 1.0"
-		oversampling="2" mipmapping="true" depth="0" depthbuffer="true" zorder="2"
+		oversampling="2" mipmapping="true" depth="0" depthbuffer="false" zorder="2"
 		zoom="true" torigin="world"
 		autoalpha="true" alpha="0.0"
 		onloaded.addevent="delayedcall(1,tween(alpha,0.5));"
